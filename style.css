@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow-x: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin: 0;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #c9d1d9;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #238636;
+    color: white;
+}
+
+/* CENTER LAYOUT */
+.profile,
+section {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+/* PROFILE CARD */
+.profile {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.profile:hover {
+    border-color: #238636;
+}
+
+/* 2x2 IMAGE */
+.profile img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid #238636;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* TITLE */
+.title {
+    font-size: 18px;
+    color: #8b949e;
+}
+
+/* SECTIONS */
+section {
+    padding: 20px;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    transition: 0.3s;
+
+    /* IMPORTANT FIX */
+    scroll-margin-top: 80px;
+}
+
+section:hover {
+    border-color: #238636;
+    transform: translateY(-2px);
+}
+
+/* PROFILE SCROLL FIX TOO */
+.profile {
+    scroll-margin-top: 80px;
+}
+
+/* HEADINGS */
+h2 {
+    color: #58a6ff;
+    margin-bottom: 12px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+}
+
+td {
+    padding: 6px;
+}
+
+/* SKILLS */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
